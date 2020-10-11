@@ -44,15 +44,10 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/register",
-							"protocol": "http",
+							"raw": "{{url}}/register",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{url}}"
 							],
-							"port": "8000",
 							"path": [
 								"register"
 							]
@@ -65,16 +60,26 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "nimda",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/login",
-							"protocol": "http",
+							"raw": "{{url}}/login",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{url}}"
 							],
-							"port": "8000",
 							"path": [
 								"login"
 							]
@@ -83,20 +88,15 @@
 					"response": []
 				},
 				{
-					"name": "login Copy",
+					"name": "logout",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/logout",
-							"protocol": "http",
+							"raw": "{{url}}/logout",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{url}}"
 							],
-							"port": "8000",
 							"path": [
 								"logout"
 							]
@@ -116,15 +116,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/rate",
-							"protocol": "http",
+							"raw": "{{url}}/rate",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{url}}"
 							],
-							"port": "8000",
 							"path": [
 								"rate"
 							]
